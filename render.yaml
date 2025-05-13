@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: ucsd-gym-tracker
+    env: python
+    plan: free
+    schedule: "*/30 6-23 * * *"
+    startCommand: python gym_tracker.py
